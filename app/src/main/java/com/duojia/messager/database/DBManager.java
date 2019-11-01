@@ -33,12 +33,9 @@ public class DBManager {
 
         try {
             sp = adc.setSavePoint("create_phone");
-
-            long startTime = System.currentTimeMillis();
             for (Phone phone : list) {
                 phoneDao.createOrUpdate(phone);
             }
-
             adc.commit(sp);
         } catch (SQLException e) {
             e.printStackTrace();
@@ -48,7 +45,15 @@ public class DBManager {
                 e1.printStackTrace();
             }
         }
-
     }
-
+    
+    public List<Phone> queryList(long pageIndex, long count) {
+        List<Phone> list = null;
+        try {
+            list = dbHelper.getPhoneDao().queryBuilder().limit(count).offset(pageIndex * count).query();
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        return list;
+    }
 }

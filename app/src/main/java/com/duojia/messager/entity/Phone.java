@@ -9,7 +9,7 @@ public class Phone {
     @DatabaseField(generatedId = true)
     private long id;
 
-    @DatabaseField
+    @DatabaseField(unique = true)
     private String phoneNum;
 
     public long getId() {

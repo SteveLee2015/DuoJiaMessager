@@ -1,3 +1,22 @@
 <resources>
     <string name="app_name">DuoJiaMessager</string>
+    <string name="common_loading_msg">正在加载，请稍候...</string>
+    <string name="load_from_sdcard">正在从SD卡加载数据...</string>
+    <string name="sending_msg">正在从发送短信...</string>
+
+    <string name="load_data">第一步: 加载数据</string>
+    <string name="send_phone_number">发送的手机号码</string>
+    <string name="send_content">请输入发送内容</string>
+    <string name="send_messenger">第二步:群发短信</string>
+
+    <string name="load_result">加载结果</string>
+    <string name="close">关闭</string>
+    <string name="ok">确认</string>
+    <string name="cancel">取消</string>
+
+    <string name="confirm_load_data">大鹅鹅,是否确认加载数据?</string>
+    <string name="confirm_send_msg">大鹅鹅,是否确认群发短信?</string>
+
+    <string name="please_send_phone">请输入发送号码</string>
+    <string name="please_send_content">请输入发送内容</string>
 </resources>
